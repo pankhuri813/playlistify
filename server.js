@@ -1,3 +1,5 @@
+const path = '.env.local'
+require("dotenv").config({path})
 const { google } = require('googleapis');
 const express = require('express');
 const cors = require('cors')
@@ -5,15 +7,17 @@ const cors = require('cors')
 const app = express();
 app.use(cors())
 
-const API_KEY = 'AIzaSyA82zTH4WiC7FFrfXsM5o26KI4jHzxvyxc';
+// const API_KEY = 'AIzaSyA82zTH4WiC7FFrfXsM5o26KI4jHzxvyxc';
+// console.log(process.env.YOUTUBE_API_KEY)
 
-const youtube = google.youtube({
-  version: 'v3',
-  auth: API_KEY
-});
 
 app.get('/api/playlist', async (req, res) => {
-  const playlistId = 'PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P';
+  const youtube = google.youtube({
+    version: 'v3',
+    auth: process.env.YOUTUBE_API_KEY
+  });
+
+  const playlistId = 'PL9bw4S5ePsEErSpVxWqnhz5A4DZ4aOKPH';
   const response = await youtube.playlistItems.list({
     part: 'snippet',
     playlistId,
