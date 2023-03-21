@@ -7,7 +7,7 @@
 // const app = express();
 // app.use(cors())
 
-console.log(process.env.YOUTUBE_API_KEY)
+// console.log(process.env.YOUTUBE_API_KEY)
 
 
 // app.get('/api/playlist', async (req, res) => {
@@ -33,3 +33,15 @@ console.log(process.env.YOUTUBE_API_KEY)
 // app.listen(3001, () => {
 //   console.log('Express server is listening on port 3001');
 // });
+
+
+
+
+
+
+
+
+
+
+
+ 
