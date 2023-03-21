@@ -1,0 +1,60 @@
+.video-card {
+    display: flex;
+    flex-direction: column;
+    background: #f5f1ed;
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .video-img {
+    width: 100%;
+    height: 300px;
+    /* background-image: url("https://i.ytimg.com/vi/WQoB2z67hvY/maxresdefault.jpg"); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+  }
+  
+  .video-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+  
+    /* colors/black */
+  
+    color: #000000;
+  }
+  
+  .channel-container {
+    display: flex;
+    gap: 10px;
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  }
+  
