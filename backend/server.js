@@ -3,11 +3,17 @@
 // const { google } = require('googleapis');
 // const express = require('express');
 // const cors = require('cors')
+const mongoose = require('mongoose')
+
+
+
+// mongoose.connect(mongodb:localhost:27017)
 
 // const app = express();
 // app.use(cors())
 
 // console.log(process.env.YOUTUBE_API_KEY)
+
 
 
 // app.get('/api/playlist', async (req, res) => {

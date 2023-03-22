@@ -1,49 +1,55 @@
-import React from 'react'
-import Navbar from '../HOME/Navbar.js'
-import './Categories.css'
-import Footer from '../HOME/Footer.js'
+import React from "react";
+import "./Categories.css";
 function Categories() {
   return (
-    <div>
-        <Navbar/>
-        <div className='searchBar'>
-          <h1>Categories</h1>
-          {/* <div>
+    <div className="categories">
+      <div className="searchBar">
+        <h1 className="heading">DANCE - STYLES</h1>
+        {/* <div>
             <input type='text' placeholder='search' />
             <button>
-              <img src={'/icons/search.svg'} alt='searchbutton' />
+              <img src={'icons/search.svg'} alt='searchbutton' />
             </button>
           </div> */}
-        </div>
-        <div className='categories'>
-          <div className='first-row'>
-            <div>
-            <img src={'./images/Kathak.jpeg'} alt='kathak' />
-            <p>KATHAK</p>
-            </div>
-            <div>
-              <img src={'./images/hipHop.jpeg'} alt='hipHop' />
-              <p>HIP-HOP</p>
-            </div>
-            <div>
-              <img src={'./images/tapDance.jpeg'} alt='hipHop' />
-              <p>TAP-DANCE</p>
+      </div>
+      <div className="categories">
+        <div className="first-row">
+          <div className="image-container">
+            <img src={"./images/Kathak.jpeg"} alt="kathak" />
+            <div className="overlay-text">
+              <p className="text">KATHAK</p>
             </div>
           </div>
-          <div className='second-row'>
-            <div>
-            <img src={'./images/contemporary.jpg'} alt='contemporary' />
-            <p>Contemporary</p>
-            </div>
-            <div>
-            <img src={'./images/jazz.jpeg'} alt='jazz' />
-            <p>JAZZ</p>
+          <div className="image-container">
+            <img src={"./images/hipHop.jpeg"} alt="hipHop" />
+            <div className="overlay-text">
+              <p className="text">HIP-HOP</p>
             </div>
           </div>
-          <Footer/>
+          <div className="image-container">
+            <img src={"./images/tapDance.jpeg"} alt="hipHop" />
+            <div className="overlay-text">
+              <p className="text">TAP-DANCE</p>
+            </div>
+          </div>
         </div>
+        <div className="second-row">
+          <div className="image-container">
+            <img src={"./images/contemporary.jpg"} alt="contemporary" />
+            <div className="overlay-text">
+              <p className="text">Contemporary</p>
+            </div>
+          </div>
+          <div className="image-container">
+            <img src={"./images/jazz.jpeg"} alt="jazz" />
+            <div className="overlay-text">
+              <p className="text">JAZZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Categories
+export default Categories;

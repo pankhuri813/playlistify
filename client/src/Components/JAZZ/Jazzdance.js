@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import VideoCard from "../KATHAK/VideoCard/VideoCard";
-import '../KATHAK/Kathak.css';
+import "../KATHAK/Kathak.css";
 
-export default function Hiphop() {
+export default function Jazz () {
   const [link, setLink] = useState("");
   const [rpp, setRPP] = useState(10);
   const [isFav, setIsFav] = useState(false);
@@ -43,17 +43,19 @@ export default function Hiphop() {
   return (
     <div className="kathak-container">
       <div className="hero-section">
-        <h1 className="heading">Hip - Hop</h1>
+        <h1 className="heading"> JAZZ - DANCE </h1>
         <div className="hero-main">
           <div className="suggested-video">
 
-             <iframe width="560" height="315"
-             src="https://www.youtube.com/embed/videoseries?list=PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P"
-              title="YouTube video player" 
+          <iframe
+           width="560" 
+          height="315"
+           src="https://www.youtube.com/embed/videoseries?list=PLF6166F725D8AA1DE"
+            title="YouTube video player"
              frameborder="0"
-                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 allowfullscreen>
-                 </iframe>
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           allowfullscreen>
+           </iframe>
 
           </div>
           <div className="playlist-form">
@@ -116,6 +118,9 @@ export default function Hiphop() {
           <button className="show-more-btn" onClick={() => setRPP(rpp + 10)}>
             Show More
           </button>
+          {/* <button className="show-more-btn" onClick={() => setRPP(rpp - 10)}>
+
+          </button> */}
         </div>
       ) : (
         err

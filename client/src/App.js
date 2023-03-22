@@ -1,55 +1,53 @@
-import Kathak from "./Components/KATHAK/Kathak.js";
-import Login from "./Components/LOGINFORMS/Login.js";
-import Signup from "./Components/LOGINFORMS/Signup.js";
-import Home from "./Components/HOME/Home.js";
-import Categories from "./Components/CATEGORIES/Categories.js";
-import HIPHOP from './Components/HIP-HOP/Hiphop.js';
-// import { Route, Routes } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Kathak from "./Components/KATHAK/Kathak";
+import Login from "./Components/LOGINFORMS/Login";
+import Signup from "./Components/LOGINFORMS/Signup";
+import Home from "./Components/HOME/Home";
+import Categories from "./Components/CATEGORIES/Categories";
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./Components/HOME/Navbar";
+import Footer from "./Components/HOME/Footer";
+import Welcome from "./Components/WELCOME/Welcome";
+import Hiphop from "./Components/HIP-HOP/Hiphop";
+import Tapdance from './Components/TAP-DANCE/Tapdance'
+import Contemporary from "./Components/CONTEMPORARY/Cotemporary";
+import Jazz from './Components/JAZZ/Jazzdance';
 
 function App() {
-  return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path='/Categories' element={<Categories/>}/>
-      <Route path="/Kathak" element={<Kathak />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/Hip-Hop" element={<HIPHOP />} />
-    </Routes>
-    </Router>
-  );
+  if (
+    window.location.pathname !== "/login" &&
+    window.location.pathname !== "/welcome" &&
+    window.location.pathname !== "/signup"
+  ) {
+    return (
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Categories" element={<Categories />} />
+          <Route path="/Kathak" element={<Kathak />} />
+          <Route path="/Tapdance" element={<Tapdance />} />
+          <Route path="/Hiphop" element={<Hiphop />} />
+          <Route path="/Tapdance" element={<Tapdance />} />
+          <Route path="/Cotemporary" element ={<Contemporary />} />
+          <Route path="/Jazz" element ={<Jazz />} />
+        </Routes>
+        <Footer />
+      </>
+    );
+  } else if (
+    window.location.pathname === "/login" ||
+    window.location.pathname === "/welcome" ||
+    window.location.pathname === "/signup"
+  ) {
+    return (
+      <Routes>
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    );
+  }
 }
 
 export default App;
-
-
-
-
-// import './App.css';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Homepage from './Homepage';
-// import Homemain from './Homemain';
-// import Categories from './Categories';
-// import Kathak from './Kathak';
-
-// function App() {
-//   return (
-//     <div>
-      
-// <Router>
-//   <Routes>
-//     <Route path ="/" element={<Homepage/>}/>
-//     <Route path="/homemain" element={ <Homemain/> }/>
-//     <Route path="/categorypage" element={<Categories/>}/>
-//     <Route path ="/kathak" element={<Kathak/>}/>
-//   </Routes>
-// </Router>
-
-//     </div>
-
-//   );
-// }
-
-// export default App;

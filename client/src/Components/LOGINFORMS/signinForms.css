@@ -6,6 +6,13 @@
     width: 100vw;
   }
   
+  .sigup-hero {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
   .signup-container {
     display: flex;
     flex-direction: column;
@@ -15,19 +22,12 @@
     width: 100%;
   }
   
-  .sigup-hero {
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-  
   .container .heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
     /* identical to box height */
   
     /* new colors/primary brown */
@@ -38,39 +38,39 @@
   form {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    margin: 30px 0 50px 0;
+    width: 50rem;
+    margin: 3rem 0 5rem 0;
   }
   
   .form-item {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 500px;
-    height: 98px;
+    gap: 0.5rem;
+    width: 50rem;
+    height: 9.8rem;
   }
   
   .form-item label {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #000;
   }
   
   .form-item input {
     box-sizing: border-box;
   
-    border: 2px solid #d8b07e;
-    border-radius: 10px;
+    border: 0.2rem solid #d8b07e;
+    border-radius: 1rem;
   
-    width: 500px;
-    height: 50px;
+    width: 50rem;
+    height: 5rem;
   
     background-color: transparent;
-    padding: 0 36px;
+    padding: 0 3.6rem;
   
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 3rem;
   
     color: #000;
   }
@@ -78,12 +78,12 @@
   .form-btn {
     box-sizing: border-box;
     background: #d8b07e;
-    border-radius: 10px;
+    border-radius: 1rem;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 3rem;
   
-    height: 50px;
+    height: 5rem;
   
     text-align: center;
   
@@ -92,30 +92,30 @@
   
   form p {
     text-align: end;
-    margin: -10px 0 10px 0;
+    margin: -1rem 0 1rem 0;
   }
   
   .form-divider {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
-    height: 23px;
+    width: 50rem;
+    height: 2.3rem;
   
-    margin: 45px 0;
+    margin: 4.5rem 0;
   }
   
   .dividing-line {
-    width: 150px;
-    height: 1px;
-    border-radius: 10px;
-    border: 1px solid #d9d9d9;
+    width: 15rem;
+    height: 0.1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #d9d9d9;
   }
   
   .divider-txt {
     font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   
     text-align: center;
   
@@ -128,8 +128,8 @@
     align-items: center;
     background-color: #f5f1ed;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 3rem;
   
     text-align: center;
   
@@ -137,15 +137,15 @@
   }
   
   .google-logo {
-    margin-right: 20px;
+    margin-right: 2rem;
   }
   
   .dontHaveAccount {
     text-align: start;
-    width: 500px;
+    width: 50rem;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   
     color: #000;
   }
@@ -155,8 +155,17 @@
   }
   
   @media (max-width: 600px) {
+    .sigup-hero {
+      display: none;
+    }
+  
+    .signup-container {
+      height: 100vh;
+      width: 100vw;
+    }
+  
     .heading {
-      font-size: 32px;
+      font-size: 3.2rem;
     }
   
     form {
@@ -164,7 +173,7 @@
     }
   
     .form-item label {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   
     .form-item,
@@ -172,12 +181,13 @@
     .form-btn,
     .form-divider,
     .dontHaveAccount {
-      width: 300px;
+      width: 30rem;
       margin-right: auto;
       margin-left: auto;
     }
   
     .dividing-line {
-      width: 50px;
+      width: 5rem;
     }
   }
+  
