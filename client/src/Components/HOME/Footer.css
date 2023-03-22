@@ -1,0 +1,17 @@
+.socials {
+    align-items: center;
+    padding: 60px;
+    background: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.socials>div>img{
+    margin:0px 8px ;
+}
+
+.socials>img {
+    margin: 10px;
+    height: 28px;
+}

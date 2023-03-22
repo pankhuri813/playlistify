@@ -1,0 +1,177 @@
+.kathak-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  
+    padding: 50px 80px;
+  }
+  
+  .kathak-container .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    /* identical to box height */
+  
+    /* new colors/primary brown */
+  
+    color: #d8b07e;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-main {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .suggested-video iframe {
+    border-radius: 20px;
+    width: 717px;
+    height: 403px;
+  }
+  
+  .playlist-form {
+    width: 717px;
+    height: 161px;
+  
+    background: #f5f1ed;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 25px;
+  }
+  
+  .form-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    /* identical to box height */
+  
+    /* new colors/primary brown */
+  
+    color: #d8b07e;
+  }
+  
+  .playlist-form form {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  form .playlist-link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  
+    color: #000000;
+    background: #f5f1ed;
+  
+    border: 2px solid #d8b07e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 13px 30px;
+    height: 50px;
+  }
+  
+  .add-btn {
+    height: 50px;
+  
+    /* new colors/primary brown */
+  
+    background: #d8b07e;
+    border-radius: 10px;
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    /* colors/white */
+  
+    color: #ffffff;
+  
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .playlist-heading-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .favorite-btn {
+    background: #f5f1ed;
+    border-radius: 10px;
+    height: 50px;
+    padding: 12px 24px;
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  
+    /* new colors/primary brown */
+  
+    color: #d8b07e;
+  }
+  
+  .videos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    gap: 50px;
+  
+    max-width: 70vw;
+  }
+  
+  .show-more-btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    /* colors/white */
+  
+    color: #ffffff;
+    background: #d8b07e;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: auto;
+  
+    margin-top: 40px;
+  }
+  
