@@ -47,15 +47,13 @@ export default function Hiphop() {
         <h1 className="heading">HIP-HOP</h1>
         <div className="hero-main">
           <div className="suggested-video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/videoseries?list=PLGubwXfO9n-sIT4z3WQJD3G4yXI6RR6J5"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <iframe width="560"
+           height="315" 
+           src="https://www.youtube.com/embed/videoseries?list=PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P" 
+           title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             allowfullscreen></iframe>
           </div>
           <div className="playlist-form">
             <div className="form-title">Add your Playlist</div>
