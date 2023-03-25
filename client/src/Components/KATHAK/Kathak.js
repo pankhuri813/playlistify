@@ -11,6 +11,7 @@ export default function Kathak() {
   const [err, setErr] = useState("");
 
   useEffect(() => {
+    if (id) {
     fetch(
       `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${id}&maxResults=${rpp}&key=AIzaSyCGuF9vosG65GuVpdlJxmxEpgCR1BgYdFw`
     )
@@ -20,7 +21,7 @@ export default function Kathak() {
         setVideos(data.items);
       });
     console.log("ID: ", id);
-
+    }
 
 }, [id, rpp,link]);
   function getId() {

@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
+
 function Home() {
   return (
     <div>
@@ -39,24 +42,33 @@ function Home() {
         </div>
       </div>
       <div className="third-div">
+        <Link to = '/CategoryDance'>
         <div className="image-container">
           <img src={"./images/image1.png"} className="image " alt="" />
           <div className="overlay-text">
             <p className="text">Dance</p>
           </div>
         </div>
+        </Link>
+        
+
+        <Link to ='/CategoryCooking'>
         <div className="image-container">
           <img src={"./images/image2.png"} className="image " alt="" />
           <div className="overlay-text">
             <p className="text">Cooking</p>
           </div>
         </div>
+        </Link>
+
+        <Link to = '/categorydrawing'>
         <div className="image-container">
           <img src={"./images/image3.png"} className="image " alt="" />
           <div className="overlay-text">
-            <p className="text">Painting</p>
+            <p className="text">Drwaing</p>
           </div>
         </div>
+        </Link>
       </div>
     </div>
   );

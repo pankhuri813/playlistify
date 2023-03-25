@@ -2,8 +2,9 @@
 // require("dotenv").config({path})
 // const { google } = require('googleapis');
 // const express = require('express');
-// const cors = require('cors')
-const mongoose = require('mongoose')
+// // const cors = require('cors')
+// const workoutRoutes =require('./Workouts.js')
+// const mongoose = require('mongoose')
 
 
 
@@ -11,6 +12,11 @@ const mongoose = require('mongoose')
 
 // const app = express();
 // app.use(cors())
+
+
+// app.use(express.json())
+// app.use('/api/workouts' , workoutRoutes)
+// app.get('/')
 
 // console.log(process.env.YOUTUBE_API_KEY)
 
@@ -25,7 +31,7 @@ const mongoose = require('mongoose')
 //   const playlistId = 'PL9bw4S5ePsEErSpVxWqnhz5A4DZ4aOKPH';
 //   const response = await youtube.playlistItems.list({
 //     part: 'snippet',
-//     playlistId,
+//     playlistId,   
 //     maxResults: 50 
 //   });
 //   const videos = response.data.items.map(item => ({
