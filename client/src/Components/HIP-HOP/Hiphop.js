@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import VideoCard from "../KATHAK/VideoCard/VideoCard";
-import "./Hiphop.css";
+import '../KATHAK/Kathak.css';
 
 export default function Hiphop() {
   const [link, setLink] = useState("");
@@ -20,8 +20,7 @@ export default function Hiphop() {
         setVideos(data.items);
       });
     console.log("ID: ", id);
-  }, [id, rpp]);
-
+  }, [id, rpp,link]);
   function getId() {
     const regex = /list=([\w-]+)/;
     const match = link.match(regex);
@@ -40,20 +39,22 @@ export default function Hiphop() {
     getId();
     console.log(id);
   }
-  console.log(err)
+  console.log(err);
   return (
-    <div className="Hiphop-container">
+    <div className="kathak-container">
       <div className="hero-section">
-        <h1 className="heading">HIP-HOP</h1>
+        <h1 className="heading">Hip - Hop</h1>
         <div className="hero-main">
           <div className="suggested-video">
-          <iframe width="560"
-           height="315" 
-           src="https://www.youtube.com/embed/videoseries?list=PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P" 
-           title="YouTube video player"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             allowfullscreen></iframe>
+
+             <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/videoseries?list=PLV3v0Ysm26sNk2CHfNJTvJ3hweTmwQO-P"
+              title="YouTube video player" 
+             frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 allowfullscreen>
+                 </iframe>
+
           </div>
           <div className="playlist-form">
             <div className="form-title">Add your Playlist</div>
@@ -75,7 +76,7 @@ export default function Hiphop() {
       {videos && videos.length > 0 ? (
         <div className="playlist">
           <div className="playlist-heading-container">
-            <h1 className="heading">Your Playlist’s Data</h1>
+            <h1 className="heading">Your Playlist</h1>
             <button
               className="favorite-btn"
               onClick={() => {

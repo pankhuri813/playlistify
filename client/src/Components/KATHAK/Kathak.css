@@ -1,17 +1,18 @@
 .kathak-container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 5rem;
   
-    padding: 50px 80px;
+    padding: 2.5rem 8rem 5rem 8rem;
   }
+
   
   .kathak-container .heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 4.2rem;
+    line-height: 6.3rem;
     /* identical to box height */
   
     /* new colors/primary brown */
@@ -25,37 +26,37 @@
   }
   
   .hero-main {
-    padding-top: 40px;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
   }
   
   .suggested-video iframe {
-    border-radius: 20px;
-    width: 717px;
-    height: 403px;
+    border-radius: 2rem;
+    width: 71.7rem;
+    height: 40.3rem;
   }
   
   .playlist-form {
-    width: 717px;
-    height: 161px;
+    width: 71.7rem;
+    height: 16.1rem;
   
     background: #f5f1ed;
-    border-radius: 20px;
-    padding: 30px;
-    padding-top: 25px;
+    border-radius: 2rem;
+    padding: 3rem;
+    padding-top: 2.5rem;
   }
   
   .form-title {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 15px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.5rem;
     /* identical to box height */
   
     /* new colors/primary brown */
@@ -66,40 +67,41 @@
   .playlist-form form {
     display: grid;
     grid-template-columns: 5fr 1fr;
-    gap: 12px;
+    gap: 1.2rem;
     width: 100%;
+    margin: 0;
   }
   
   form .playlist-link {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   
     color: #000000;
     background: #f5f1ed;
   
-    border: 2px solid #d8b07e;
-    border-radius: 10px;
+    border: 0.2rem solid #d8b07e;
+    border-radius: 1rem;
     box-sizing: border-box;
-    padding: 13px 30px;
-    height: 50px;
+    padding: 1.3rem 3rem;
+    height: 5rem;
   }
   
   .add-btn {
-    height: 50px;
+    height: 5rem;
   
     /* new colors/primary brown */
   
     background: #d8b07e;
-    border-radius: 10px;
+    border-radius: 1rem;
   
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -117,25 +119,26 @@
   .playlist-heading-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   .favorite-btn {
     background: #f5f1ed;
-    border-radius: 10px;
-    height: 50px;
-    padding: 12px 24px;
+    border-radius: 1rem;
+    height: 5rem;
+    padding: 1.2rem 2.4rem;
   
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     /* identical to box height */
   
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 1rem;
   
     /* new colors/primary brown */
   
@@ -148,8 +151,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 50px;
-    gap: 50px;
+    margin-top: 5rem;
+    gap: 5rem;
   
     max-width: 70vw;
   }
@@ -158,8 +161,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -168,10 +171,46 @@
   
     color: #ffffff;
     background: #d8b07e;
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
     margin: auto;
   
-    margin-top: 40px;
+    margin-top: 4rem;
+  }
+  
+  @media (max-width: 600px) {
+    .suggested-video iframe {
+      width: 50rem;
+      height: 30rem;
+    }
+  
+    .playlist-form {
+      width: 50rem;
+      height: auto;
+    }
+  
+    .videos-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .kathak-container .heading {
+      font-size: 3.2rem;
+    }
+  
+    .suggested-video iframe {
+      width: 40rem;
+      height: 30rem;
+    }
+  
+    .favorite-btn p {
+      display: none;
+    }
+  
+    .playlist-form {
+      width: 40rem;
+    }
   }
   

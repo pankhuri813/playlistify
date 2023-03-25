@@ -11,6 +11,7 @@ export default function Kathak() {
   const [err, setErr] = useState("");
 
   useEffect(() => {
+    if (id) {
     fetch(
       `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${id}&maxResults=${rpp}&key=AIzaSyCGuF9vosG65GuVpdlJxmxEpgCR1BgYdFw`
     )
@@ -20,8 +21,9 @@ export default function Kathak() {
         setVideos(data.items);
       });
     console.log("ID: ", id);
-  }, [id, rpp]);
+    }
 
+}, [id, rpp,link]);
   function getId() {
     const regex = /list=([\w-]+)/;
     const match = link.match(regex);
@@ -40,7 +42,7 @@ export default function Kathak() {
     getId();
     console.log(id);
   }
-  console.log(err)
+  console.log(err);
   return (
     <div className="kathak-container">
       <div className="hero-section">
@@ -77,7 +79,7 @@ export default function Kathak() {
       {videos && videos.length > 0 ? (
         <div className="playlist">
           <div className="playlist-heading-container">
-            <h1 className="heading">Your Playlist’s Data</h1>
+            <h1 className="heading">Your Playlist</h1>
             <button
               className="favorite-btn"
               onClick={() => {
@@ -97,6 +99,7 @@ export default function Kathak() {
             </button>
           </div>
           <div className="videos-container">
+            
             {videos.map((e, i) => {
               return (
                 <>

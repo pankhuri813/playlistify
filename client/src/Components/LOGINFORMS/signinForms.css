@@ -1,0 +1,193 @@
+.login.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .sigup-hero {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    /* identical to box height */
+  
+    /* new colors/primary brown */
+  
+    color: #d8b07e;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: 3rem 0 5rem 0;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50rem;
+    height: 9.8rem;
+  }
+  
+  .form-item label {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+  }
+  
+  .form-item input {
+    box-sizing: border-box;
+  
+    border: 0.2rem solid #d8b07e;
+    border-radius: 1rem;
+  
+    width: 50rem;
+    height: 5rem;
+  
+    background-color: transparent;
+    padding: 0 3.6rem;
+  
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  
+    color: #000;
+  }
+  
+  .form-btn {
+    box-sizing: border-box;
+    background: #d8b07e;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  
+    height: 5rem;
+  
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  
+  form p {
+    text-align: end;
+    margin: -1rem 0 1rem 0;
+  }
+  
+  .form-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+    height: 2.3rem;
+  
+    margin: 4.5rem 0;
+  }
+  
+  .dividing-line {
+    width: 15rem;
+    height: 0.1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #d9d9d9;
+  }
+  
+  .divider-txt {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  
+    text-align: center;
+  
+    color: #000;
+  }
+  
+  .google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f1ed;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  
+    text-align: center;
+  
+    color: #d8b07e;
+  }
+  
+  .google-logo {
+    margin-right: 2rem;
+  }
+  
+  .dontHaveAccount {
+    text-align: start;
+    width: 50rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  
+    color: #000;
+  }
+  
+  .dontHaveAccount a {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 600px) {
+    .sigup-hero {
+      display: none;
+    }
+  
+    .signup-container {
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    .heading {
+      font-size: 3.2rem;
+    }
+  
+    form {
+      width: auto;
+    }
+  
+    .form-item label {
+      font-size: 1.4rem;
+    }
+  
+    .form-item,
+    .form-item input,
+    .form-btn,
+    .form-divider,
+    .dontHaveAccount {
+      width: 30rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .dividing-line {
+      width: 5rem;
+    }
+  }
+  

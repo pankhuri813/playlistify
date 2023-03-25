@@ -15,3 +15,14 @@
     margin: 10px;
     height: 28px;
 }
+
+@media all and (max-width:415px){
+    .socials{
+        display: flex;
+        flex-direction: column;
+    }
+    .socials>img {
+        margin: 0px;
+        height: 24px;
+    }
+}
